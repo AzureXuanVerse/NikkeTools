@@ -13,6 +13,9 @@ I DO NOT CLAIM ANY RESPONSIBILITY FOR ANY USAGE OF THIS SOFTWARE, THE SOFTWARE I
 - StaticData -> Fetches AND decrypts the latest StaticData.zip (game data) from live servers
 - UnLuac -> Decompiles Lua bytecode back to original code, modified for Nikke lua
 
+## Notice
+- It's recommended to use [AceMetadataUnpacker](https://github.com/Hiro420/AceMetadataUnpacker) instead of `MetadataDumper` to retreive the metadata statically
+
 ## How to use them?
 - Catalog | StaticData -> Just compile and run, works straight out of the box
 - MetadataDumper -> Compile the project via Visual Studio 2022. Take theput the `NikkeMetadataDumper.dll` from `Win64` generated folder, together with the files in `Gadget` folder, and put them all in game directory next to `nikke.exe`. Run the game, a decrypted `global-metadata.dat` will be generated in the game directory.
